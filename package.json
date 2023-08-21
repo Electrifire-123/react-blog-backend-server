@@ -6,8 +6,8 @@
   "scripts": {
     "build": "./node_modules/babel-cli/bin/babel.js src --out-dir lib --plugins transform-react-jsx --presets es2015",
     "bundle": "./node_modules/browserify/bin/cmd.js lib/client.js -o public/js/bundle.js",
-    "start": "npm run build && npm run bundle && nodemon express.js",
-    "run": "npm run build && npm run bundle && node express.js"
+    "dev": "npm run build && npm run bundle && nodemon express.js",
+    "start": "npm run build && npm run bundle && node express.js"
   },
   "author": "Rahul Yadav",
   "license": "ISC",
