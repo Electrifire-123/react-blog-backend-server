@@ -4,7 +4,7 @@
   "description": "For React Blog App",
   "main": "express.js",
   "scripts": {
-    "build": "npm install && ./node_modules/babel-cli/bin/babel.js src --out-dir lib --plugins transform-react-jsx --presets es2015 && npm run bundle",
+    "build": "npm install && ./node_modules/babel-cli/bin/babel.js src --out-dir lib --plugins transform-react-jsx --presets es2015 && npm run bundle && ls -la",
     "bundle": "./node_modules/browserify/bin/cmd.js lib/client.js -o public/js/bundle.js",
     "dev": "npm run build && npm run bundle && nodemon express.js",
     "start": "node express.js"
